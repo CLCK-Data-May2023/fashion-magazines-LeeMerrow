@@ -14,4 +14,4 @@ WITH unpaid AS(
 SELECT unpaid.Customer,
 	PRINTF('$%.2f',SUM(unpaid.Amount)) AS 'Amount Due'
 FROM unpaid
-GROUP BY Customer
+GROUP BY Customer;
